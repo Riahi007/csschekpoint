@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    position: relative;
+   
+    background-color: rgb(18, 18, 63);}
+.Hotelier{
+    padding: 5px;
+    margin: 20px;
+    font-size: 40px;
+    height: 50%;
+    width: 20%;
+    background-color: rgb(18, 18, 63);
+    color: orange;
+}
+.contact i{
+    color: orange;
+}
+.navContainer{
+height: 50%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: end;
+align-items: end;
+}
+.phone{
+    display: flex;
+    gap: 20px;
+}
+.btn i{
+    font-size: 20px;
+    align-items: center;
+}
+.btn{
+    
+    align-items: center;
+    height: 80px;
+    width: 280px;
+    font-size: 15px;
+    border: none;
+    background-color: orange;
+    color: white;
+}
+.navContainer .contact{
+    display: flex;
+    background-color: white;
+    height: 30%;
+    color: black;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    right: 10px;
+    width: 70%;
+    justify-content: space-between;
+   align-items: center;
+    
+padding-left: 100px;
+}
+.navContainer .home{
+    display: flex;
+    height: 60%;
+    padding-top: 50px;
+    gap: 50px;
+    color: white;
+    align-items: center;
+    margin-right: 100px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    
+    
+}
+.home p:hover{
+    color: orange;
+}
+.dropdw{
+    position: relative;
+    height: inherit;
+}
+.dropdw >p{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdw-cont{
+    position: absolute;
+    background-color: rgb(216, 216, 216);
+    visibility: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.124);
+    left: -20%;
+    top: 800px;
+    width: 200px;
+    color: black;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.dropdw-cont p{
+    padding: 10px 20px;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.dropdw-cont p:hover{
+    background-color: rgb(255, 255, 255);
+    padding-left: 30px;
+    color: black;
+}
+.dropdw >p:hover + .dropdw-cont, .dropdw-cont:hover{
+    visibility: visible;
+    opacity: 1;
+    top: 80%;
+}
+
+.luxury{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+main{
+    width: 200px;
+    height: 2px;
+   
+    background-color: orange;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+.lur{
+    font-size: 2rem;
+    width: 40%;
+}
+.main{
+   position: absolute;
+   left: 30%;
+   top: 50%;
+   
+   
+}
+.room{
+    display: flex;
+   align-items: center;
+
+   gap: 50px;
+   margin-left: 95px;
+}
+.btn2{
+    background-color: orange;
+    color: white;
+    width: 155px;
+    height: 55px;
+    border: none;
+}
+.btn3{
+    width: 155px;
+    height: 55px;
+    border: none;
+
+}
+
+.navdeux {
+    display: none !important;
+    width: 100%;
+    background-color: rgb(18, 18, 63);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+}
+
+.navdeux .Hotelier {
+    font-size: 40px;
+    color: orange;
+    padding: 10px;
+    flex: 1;
+}
+
+.navdeux .logo {
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative; 
+}
+
+.navdeux .navContainer {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: rgb(18, 18, 63); 
+    color: white;
+    z-index: 10; 
+}
+
+
+.navdeux .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.navdeux .home p {
+    padding: 10px;
+}
+
+.navdeux .home p:hover {
+    color: orange;
+}
+
+@media screen and (max-width: 1100px) {
+    .btn {
+        display: none;
+    }
+
+    .navmain {
+        display: none;
+    }
+
+    .navdeux {
+        display: flex !important;
+        
+    }
+
+    .navdeux .logo:hover ~ .navContainer,
+    .navdeux .navContainer:hover {
+        display: flex !important;
+        background-color: rgb(18, 18, 63) !important;
+        width: 50%;
+        height: 750%;
+        color: black;
+       
+    }
+    .form{
+        display: grid;
+    }
+    .containaire{
+       display: none;
+       padding: 1;
+    }
+   
+}
+form{
+    background-color: white;
+    width: 70%;
+    
+    height: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 40%;
+    margin-left: 15%;
+    
+    gap: 15px;
+    
+}
+input{
+    font-size: 85%;
+    width: 30%;
+}
+select{
+    width: 30%;
+    font-size: 85%;
+    color: gray ;
+}
+.btn5{
+    width: 30%;
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    height: 30px;
+    
+}
